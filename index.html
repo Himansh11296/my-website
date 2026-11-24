@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<button id="themeBtn" class="theme-btn">
-    🌙 Dark Mode
-</button>
-
 <body>
 
     <!-- Navigation -->
@@ -30,29 +26,38 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <button class="menu-btn" id="menuBtn">☰</button>
+            <button id="themeBtn" class="theme-btn">
+                🌙 Dark Mode
+            </button>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">
+                ☰
+            </button>
         </nav>
     </header>
 
     <!-- Home Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-          <img src="himanshu.jpg.jpeg"
-     alt="Himanshu"
-     class="profile-photo">
+
+            <img src="himanshu.jpg.jpeg"
+                 alt="Himanshu Pujari"
+                 class="profile-photo">
+
             <p class="welcome">WELCOME TO MY PORTFOLIO</p>
 
             <h1>Hello, I'm <span>Himanshu Pujari</span></h1>
 
             <h2>Web Development Learner</h2>
 
-            <p>
+            <p class="hero-description">
                 I am from Boisar, Maharashtra.
                 I am passionate about learning technology
                 and building modern websites.
             </p>
 
             <a href="#projects" class="btn">Explore My Work</a>
+
         </div>
     </section>
 
@@ -81,42 +86,41 @@
     </section>
 
     <!-- Skills Section -->
-    
-<section id="skills" class="section">
-    <h2 class="section-title">My Skills</h2>
+    <section id="skills" class="section">
+        <h2 class="section-title">My Skills</h2>
 
-    <div class="skills-box">
+        <div class="skills-box">
 
-        <div class="skill">
-            <h3>HTML <span>Learning</span></h3>
-            <div class="progress">
-                <div class="progress-bar html"></div>
+            <div class="skill">
+                <h3>HTML <span>Learning</span></h3>
+                <div class="progress">
+                    <div class="progress-bar html"></div>
+                </div>
             </div>
-        </div>
 
-        <div class="skill">
-            <h3>CSS <span>Learning</span></h3>
-            <div class="progress">
-                <div class="progress-bar css"></div>
+            <div class="skill">
+                <h3>CSS <span>Learning</span></h3>
+                <div class="progress">
+                    <div class="progress-bar css"></div>
+                </div>
             </div>
-        </div>
 
-        <div class="skill">
-            <h3>JavaScript <span>Beginner</span></h3>
-            <div class="progress">
-                <div class="progress-bar js"></div>
+            <div class="skill">
+                <h3>JavaScript <span>Beginner</span></h3>
+                <div class="progress">
+                    <div class="progress-bar js"></div>
+                </div>
             </div>
-        </div>
 
-        <div class="skill">
-            <h3>VRS Software <span>Experienced</span></h3>
-            <div class="progress">
-                <div class="progress-bar vrs"></div>
+            <div class="skill">
+                <h3>VRS Software <span>Experienced</span></h3>
+                <div class="progress">
+                    <div class="progress-bar vrs"></div>
+                </div>
             </div>
-        </div>
 
-    </div>
-</section>
+        </div>
+    </section>
 
     <!-- Experience Section -->
     <section id="experience" class="section">
@@ -126,9 +130,7 @@
             <h3>Dispatch Department</h3>
             <h4>Prabhudayal Polyster Pvt. Ltd.</h4>
 
-            <p>
-                July 2018 – Present
-            </p>
+            <p>July 2018 – Present</p>
 
             <ul class="experience-list">
                 <li>E-Invoice and E-Way Bill preparation</li>
@@ -145,6 +147,7 @@
         <h2 class="section-title">My Projects</h2>
 
         <div class="project-container">
+
             <div class="project-card">
                 <h3>My First Website</h3>
 
@@ -166,51 +169,47 @@
 
                 <span>HTML | CSS | JavaScript</span>
             </div>
+
         </div>
     </section>
 
     <!-- Contact Section -->
-    
-<section id="contact" class="section">
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
 
-    <h2 class="section-title">Contact Me</h2>
+        <div class="contact-form">
+            <form id="contactForm">
 
-    <div class="contact-form">
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
 
-        <form id="contactForm">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
 
-            <input
-                type="text"
-                id="name"
-                placeholder="Your Name"
-                required
-            >
+                <textarea
+                    id="message"
+                    placeholder="Write Your Message"
+                    rows="6"
+                    required
+                ></textarea>
 
-            <input
-                type="email"
-                id="email"
-                placeholder="Your Email"
-                required
-            >
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
 
-            <textarea
-                id="message"
-                placeholder="Write Your Message"
-                rows="6"
-                required
-            ></textarea>
+                <p id="formStatus"></p>
 
-            <button type="submit" class="btn">
-                Send Message
-            </button>
-
-            <p id="formStatus"></p>
-
-        </form>
-
-    </div>
-
-</section>
+            </form>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
