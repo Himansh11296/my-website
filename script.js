@@ -20,18 +20,19 @@ links.forEach(function(link) {
 document.getElementById("year").textContent =
     new Date().getFullYear();
 
+
 // Dark Mode / Light Mode
 
 const themeBtn = document.getElementById("themeBtn");
 
 themeBtn.addEventListener("click", function() {
 
-    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
 
-    if (document.body.classList.contains("dark-mode")) {
-        themeBtn.textContent = "☀️ Light Mode";
-    } else {
+    if (document.body.classList.contains("light-mode")) {
         themeBtn.textContent = "🌙 Dark Mode";
+    } else {
+        themeBtn.textContent = "☀️ Light Mode";
     }
 
 });
