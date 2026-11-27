@@ -357,6 +357,7 @@ header {
 .experience-list {
     padding-left: 22px;
     margin-top: 20px;
+    margin-bottom: 40px;
     color: var(--muted);
 }
 
