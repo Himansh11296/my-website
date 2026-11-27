@@ -231,12 +231,12 @@ header {
 
 #skills {
     padding-top: 45px;
-    padding-bottom: 120px;
-    scroll-margin-top: 220px;
+    padding-bottom: 20px;
+    scroll-margin-top: 85px;
 }
 
 #experience {
-    padding-top: 100px;
+    padding-top: 85px;
     scroll-margin-top: 85px;
 }
 
