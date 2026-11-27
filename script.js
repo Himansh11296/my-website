@@ -1,22 +1,27 @@
 
-/* =========================
-   HIMANSHU PUJARI PORTFOLIO
-   COMPLETE JAVASCRIPT
-========================= */
+// =========================
+// HIMANSHU PUJARI PORTFOLIO
+// COMPLETE JAVASCRIPT
+// =========================
 
 
-/* =========================
-   EMAILJS INITIALIZATION
-========================= */
+// =========================
+// EMAILJS INITIALIZATION
+// =========================
 
 emailjs.init({
-    publicKey: "sVyBzZdf3Z_7X4rkk"
+    publicKey: "sVyBzZdf3Z_7X4rkk",
+    blockHeadless: true,
+    limitRate: {
+        id: "himanshu-portfolio-contact",
+        throttle: 10000
+    }
 });
 
 
-/* =========================
-   MOBILE MENU
-========================= */
+// =========================
+// MOBILE MENU
+// =========================
 
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
@@ -26,8 +31,6 @@ if (menuBtn && navLinks) {
     menuBtn.addEventListener("click", function() {
         navLinks.classList.toggle("active");
     });
-
-    // Close Menu After Clicking Link
 
     const links = document.querySelectorAll(".nav-links a");
 
@@ -39,9 +42,9 @@ if (menuBtn && navLinks) {
 }
 
 
-/* =========================
-   AUTOMATIC CURRENT YEAR
-========================= */
+// =========================
+// AUTOMATIC CURRENT YEAR
+// =========================
 
 const yearElement = document.getElementById("year");
 
@@ -50,9 +53,9 @@ if (yearElement) {
 }
 
 
-/* =========================
-   DARK MODE / LIGHT MODE
-========================= */
+// =========================
+// DARK MODE / LIGHT MODE
+// =========================
 
 const themeBtn = document.getElementById("themeBtn");
 
@@ -69,24 +72,14 @@ if (themeBtn) {
         }
 
     });
+
 }
 
 
-
-/* =========================
-   SECURE CONTACT FORM
-   EMAILJS INTEGRATION
-========================= */
-
-// EmailJS Rate Limiting
-emailjs.init({
-    publicKey: "sVyBzZdf3Z_7X4rkk",
-    blockHeadless: true,
-    limitRate: {
-        id: "himanshu-portfolio-contact",
-        throttle: 10000
-    }
-});
+// =========================
+// SECURE CONTACT FORM
+// EMAILJS INTEGRATION
+// =========================
 
 const contactForm = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
@@ -113,6 +106,7 @@ if (contactForm && formStatus) {
         );
 
         // Honeypot Spam Protection
+
         if (honeypot && honeypot.value.trim() !== "") {
             formStatus.textContent =
                 "Unable to process your request.";
@@ -120,18 +114,24 @@ if (contactForm && formStatus) {
         }
 
         // Input Validation
+
         if (!name || !email || !message) {
             formStatus.textContent = "Please fill all fields!";
             return;
         }
 
-        if (name.length > 60 || email.length > 254 ||
-            message.length > 2000) {
-            formStatus.textContent = "Input exceeds allowed length.";
+        if (
+            name.length > 60 ||
+            email.length > 254 ||
+            message.length > 2000
+        ) {
+            formStatus.textContent =
+                "Input exceeds allowed length.";
             return;
         }
 
         // Email Validation
+
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             formStatus.textContent =
                 "Please enter a valid email address!";
@@ -139,6 +139,7 @@ if (contactForm && formStatus) {
         }
 
         // Submission Cooldown
+
         const now = Date.now();
 
         if (now - lastSubmitTime < 10000) {
@@ -154,16 +155,22 @@ if (contactForm && formStatus) {
         }
 
         isSending = true;
-        submitBtn.disabled = true;
-        submitBtn.textContent = "Sending...";
+
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Sending...";
+        }
 
         formStatus.textContent = "Sending your message...";
         formStatus.style.color = "#60a5fa";
 
+        // Email Template Parameters
+
         const templateParams = {
             name: name,
             email: email,
-            message: message
+            message: message,
+            time: new Date().toLocaleString("en-IN")
         };
 
         try {
@@ -186,7 +193,7 @@ if (contactForm && formStatus) {
 
         } catch (error) {
 
-            console.error("Contact form submission failed.");
+            console.error("Contact form submission failed:", error);
 
             formStatus.textContent =
                 "Message could not be sent. Please try again later.";
@@ -196,8 +203,11 @@ if (contactForm && formStatus) {
         } finally {
 
             isSending = false;
-            submitBtn.disabled = false;
-            submitBtn.textContent = "Send Message";
+
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Send Message";
+            }
 
         }
 
