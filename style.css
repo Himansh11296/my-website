@@ -230,7 +230,8 @@ header {
 }
 
 #skills {
-    padding-top: 20px;
+    padding-top: 45px;
+    scroll-margin-top: 85px;
 }
 
 .section-title {
@@ -506,26 +507,34 @@ footer {
     }
 
     .hero {
-    min-height: calc(100svh + 40px);
-    padding: 40px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-   
-#about {
-    min-height: calc(100svh - 75px);
-    scroll-margin-top: 85px;
-}
+        min-height: calc(100svh + 40px);
+        padding: 40px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-   #skills,
-   #experience,
-   #projects,
-   #contact {
-    scroll-margin-top: 85px;
-}
- 
-   .profile-photo {
+    #about {
+        min-height: calc(100svh - 75px);
+        scroll-margin-top: 85px;
+    }
+
+    #skills {
+        padding-top: 45px;
+        scroll-margin-top: 85px;
+    }
+
+    #experience,
+    #projects,
+    #contact {
+        scroll-margin-top: 85px;
+    }
+
+    #projects .section-title {
+        margin-bottom: 30px;
+    }
+
+    .profile-photo {
         width: 145px;
         height: 145px;
     }
@@ -536,7 +545,6 @@ footer {
 
     .section {
         width: 92%;
-        /* Reduced mobile section spacing */
         padding: 42px 10px;
     }
 
@@ -559,8 +567,8 @@ footer {
     .skill h3 {
         font-size: 15px;
     }
-}
 
+}
 /* Reduced Motion Accessibility */
 
 @media (prefers-reduced-motion: reduce) {
