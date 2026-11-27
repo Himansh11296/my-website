@@ -1,303 +1,556 @@
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Himanshu Pujari | Portfolio</title>
+    <title>Himanshu Pujari | Professional Portfolio</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Himanshu Pujari's personal portfolio showcasing web development skills, professional experience, projects and contact information.">
+    <meta name="description" content="Portfolio of Himanshu Pujari from Boisar, Maharashtra. Professional experience in Store Operations, Inventory Management, Production and Dispatch Operations, with a growing interest in Web Development and Data Analytics.">
+
+    <meta name="keywords" content="Himanshu Pujari, Portfolio, Store Management, Inventory Management, Data Analytics, Web Development">
 
     <meta name="author" content="Himanshu Pujari">
 
-    <meta name="theme-color" content="#080d1a">
-
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph Social Sharing -->
     <meta property="og:title" content="Himanshu Pujari | Portfolio">
-    <meta property="og:description" content="Explore my portfolio, skills, experience and projects.">
+    <meta property="og:description" content="Explore my professional experience, skills and projects.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://himansh11296.github.io/my-website/">
 
-    <!-- Font Awesome -->
+    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <a href="#home" class="logo">Himanshu<span>.</span></a>
+<!-- ================= NAVBAR ================= -->
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<header class="header">
+    <nav class="navbar">
 
-            <button id="themeBtn" class="theme-btn">
-                🌙 Dark Mode
+        <a href="#home" class="logo">Himanshu<span>.</span></a>
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <div class="nav-actions">
+
+            <button id="themeToggle" class="theme-toggle"
+            aria-label="Toggle dark and light mode">
+                <i class="fas fa-sun"></i>
             </button>
 
-            <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">
-                ☰
+            <button class="menu-btn" id="menuBtn"
+            aria-label="Open navigation menu">
+                <i class="fas fa-bars"></i>
             </button>
-        </nav>
-    </header>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
+        </div>
 
+    </nav>
+</header>
+
+
+<!-- ================= HOME SECTION ================= -->
+
+<section id="home" class="hero section">
+
+    <div class="hero-content">
+
+        <div class="hero-image">
             <img src="himanshu.jpg.jpeg"
-                 alt="Himanshu Pujari"
-                 class="profile-photo">
+            alt="Himanshu Pujari">
+        </div>
 
-            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+        <div class="hero-text">
+
+            <p class="hero-welcome">WELCOME TO MY PORTFOLIO</p>
 
             <h1>Hello, I'm <span>Himanshu Pujari</span></h1>
 
             <h2>Web Development Learner</h2>
 
-            <p class="hero-description">
-                I am from Boisar, Maharashtra.
-                I am passionate about learning technology
-                and building modern websites.
-            </p>
-
-            <a href="#projects" class="btn">Explore My Work</a>
-
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about-card">
-            <h3>Who Am I?</h3>
-
             <p>
-                My name is Himanshu Pujari.
                 I am from Boisar, Maharashtra, India.
-                I work in the Dispatch Department at
-                Prabhudayal Polyster Pvt. Ltd.
-
-                I have experience in dispatch operations,
-                challan preparation, E-Invoice, E-Way Bill
-                and VRS Software.
-
-                Along with my professional work,
-                I am learning HTML, CSS and JavaScript
-                to develop my web development skills.
+                I have professional experience in Store Operations,
+                Inventory Management, Production Planning and
+                Dispatch Operations. I am also continuously
+                developing my technical skills.
             </p>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <h2 class="section-title">My Skills</h2>
-
-        <div class="skills-box">
-
-            <div class="skill">
-                <h3>HTML <span>Learning</span></h3>
-                <div class="progress">
-                    <div class="progress-bar html"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <h3>CSS <span>Learning</span></h3>
-                <div class="progress">
-                    <div class="progress-bar css"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <h3>JavaScript <span>Beginner</span></h3>
-                <div class="progress">
-                    <div class="progress-bar js"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <h3>VRS Software <span>Experienced</span></h3>
-                <div class="progress">
-                    <div class="progress-bar vrs"></div>
-                </div>
-            </div>
+            <a href="#projects" class="btn">
+                Explore My Work
+                <i class="fas fa-arrow-right"></i>
+            </a>
 
         </div>
-    </section>
 
-    
-<!-- Experience Section -->
-<section id="experience" class="section">
-    <h2 class="section-title">My Experience</h2>
-
-    <!-- Second Experience -->
-    <div class="about-card">
-        <h3>Store Officer</h3>
-        <h4>Duratex Silk Mills Pvt. Ltd.</h4>
-
-        <p>July 2026 – October 2026</p>
-
-        <ul class="experience-list">
-            <li>Store Inward and Outward Management</li>
-            <li>Preparation of Store Purchase Orders (PO)</li>
-            <li>Stock Management and Inventory Control</li>
-            <li>Daily Physical Stock Verification and Updates</li>
-        </ul>
-    </div>
-
-    <!-- First Experience -->
-    <div class="about-card">
-        <h3>Operations & Inventory Management</h3>
-        <h4>Prabhudayal Polyster Pvt. Ltd.</h4>
-
-        <p>July 2018 – July 2026</p>
-
-        <ul class="experience-list">
-            <li>E-Invoice and E-Way Bill Preparation</li>
-            <li>Grey, Finish and Job Work Challan Management</li>
-            <li>Daily Production Entries in VRS Software</li>
-            <li>Production Planning and Coordination</li>
-            <li>Beam Planning and Warping Entries</li>
-            <li>Dispatch and Return Challan Management</li>
-            <li>Yarn Inventory Management</li>
-            <li>Store Inventory Management</li>
-        </ul>
     </div>
 
 </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2 class="section-title">My Projects</h2>
 
-        <div class="project-container">
-            
-<div class="portfolio-links">
+<!-- ================= ABOUT SECTION ================= -->
 
-    <a
-        href="https://github.com/himansh11296"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="portfolio-link"
-    >
-        <i class="fa-brands fa-github"></i>
-        View My GitHub Profile
-    </a>
+<section id="about" class="section">
 
-    <a
-        href="https://github.com/himansh11296/my-website"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="portfolio-link"
-    >
-        <i class="fa-solid fa-code"></i>
-        View Portfolio Source Code
-    </a>
+    <h2 class="section-title">About Me</h2>
 
-</div>
+    <div class="about-card">
 
-
-            <div class="project-card">
-                <h3>My First Website</h3>
-
-                <p>
-                    My first website created using
-                    HTML and CSS.
-                </p>
-
-                <span>HTML | CSS</span>
-            </div>
-
-            <div class="project-card">
-                <h3>Personal Portfolio</h3>
-
-                <p>
-                    My personal portfolio website
-                    created using HTML, CSS and JavaScript.
-                </p>
-
-                <span>HTML | CSS | JavaScript</span>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2 class="section-title">Contact Me</h2>
-
-        <div class="contact-form">
-            <form id="contactForm">
-
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Your Name"
-                    required
-                >
-
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Your Email"
-                    required
-                >
-
-                <textarea
-                    id="message"
-                    placeholder="Write Your Message"
-                    rows="6"
-                    required
-                ></textarea>
-
-                <button type="submit" class="btn">
-                    Send Message
-                </button>
-
-                <p id="formStatus"></p>
-
-            </form>
-        </div>
-    </section>
-
-    <!-- WhatsApp Floating Button -->
-    <a
-        href="https://wa.me/919527810314"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="whatsapp-button"
-        aria-label="Chat with me on WhatsApp"
-        title="Chat on WhatsApp"
-    >
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- Footer -->
-    <footer>
         <p>
-            © <span id="year"></span>
-            Himanshu Pujari. All Rights Reserved.
+            My name is Himanshu Pujari, and I am from
+            Boisar, Maharashtra, India.
         </p>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <p>
+            I have professional experience in Store Operations,
+            Inventory Management, Production Planning and
+            Dispatch Operations. I have worked with Duratex
+            Silk Mills Pvt. Ltd. and Prabhudayal Polyster Pvt. Ltd.,
+            gaining practical knowledge of store management,
+            stock control, production coordination and
+            business documentation.
+        </p>
+
+        <p>
+            I have completed my B.Com graduation and
+            certifications in MS-CIT, Tally ERP 9 and
+            Advanced Certification in Data Analytics.
+        </p>
+
+        <p>
+            Along with my professional experience, I am
+            passionate about technology and continuously
+            learning HTML, CSS and JavaScript to develop
+            my web development skills and build modern,
+            user-friendly websites.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS SECTION ================= -->
+
+<section id="skills" class="section">
+
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills-box">
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <span class="skill-status learning">Learning</span>
+            <p>HTML, CSS and JavaScript</p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-chart-column"></i>
+            </div>
+            <h3>Data Analytics</h3>
+            <span class="skill-status certified">Certified</span>
+            <p>MS Excel and Power BI</p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-boxes-stacked"></i>
+            </div>
+            <h3>Store & Inventory</h3>
+            <span class="skill-status experienced">Experienced</span>
+            <p>Stock Control and Store Management</p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-industry"></i>
+            </div>
+            <h3>Operations</h3>
+            <span class="skill-status experienced">Experienced</span>
+            <p>Production Planning and Dispatch</p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-calculator"></i>
+            </div>
+            <h3>Accounting</h3>
+            <span class="skill-status certified">Certified</span>
+            <p>Tally ERP 9 and MS-CIT</p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-laptop"></i>
+            </div>
+            <h3>Productivity & AI</h3>
+            <span class="skill-status learning">Learning</span>
+            <p>PowerPoint and AI Learning</p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-file-invoice"></i>
+            </div>
+            <h3>VRS Software</h3>
+            <span class="skill-status experienced">Experienced</span>
+            <p>Production Entries and Documentation</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE SECTION ================= -->
+
+<section id="experience" class="section">
+
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="experience-container">
+
+        <!-- First Experience -->
+
+        <div class="about-card experience-card">
+
+            <h3>Store Officer</h3>
+
+            <h4>Duratex Silk Mills Pvt. Ltd.</h4>
+
+            <p class="experience-date">
+                July 2026 – October 2026
+            </p>
+
+            <ul class="experience-list">
+                <li>Store Inward and Outward Management</li>
+                <li>Preparation of Store Purchase Orders (PO)</li>
+                <li>Stock Management and Inventory Control</li>
+                <li>Daily Physical Stock Verification and Updates</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Second Experience -->
+
+        <div class="about-card experience-card">
+
+            <h3>Operations & Inventory Management</h3>
+
+            <h4>Prabhudayal Polyster Pvt. Ltd.</h4>
+
+            <p class="experience-date">
+                July 2018 – July 2026
+            </p>
+
+            <ul class="experience-list">
+                <li>E-Invoice and E-Way Bill Preparation</li>
+                <li>Grey, Finish and Job Work Challan Management</li>
+                <li>Daily Production Entries in VRS Software</li>
+                <li>Production Planning and Coordination</li>
+                <li>Beam Planning and Warping Entries</li>
+                <li>Dispatch and Return Challan Management</li>
+                <li>Yarn Inventory Management</li>
+                <li>Store Inventory Management</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION SECTION ================= -->
+
+<section id="education" class="section">
+
+    <h2 class="section-title">Education & Certifications</h2>
+
+    <div class="education-container">
+
+        <div class="education-card">
+
+            <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+
+            <h3>Education</h3>
+
+            <ul class="education-list">
+
+                <li>
+                    <strong>Bachelor of Commerce (B.Com)</strong>
+                    <span>2017</span>
+                </li>
+
+                <li>
+                    <strong>HSC – MCVC (Accounting & Auditing)</strong>
+                    <span>2014</span>
+                </li>
+
+                <li>
+                    <strong>SSC</strong>
+                    <span>2012</span>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <div class="education-icon">
+                <i class="fas fa-certificate"></i>
+            </div>
+
+            <h3>Certifications</h3>
+
+            <ul class="education-list">
+
+                <li>
+                    <strong>Advanced Certification in Data Analytics</strong>
+                    <span>IRA Skills – July 2025</span>
+                </li>
+
+                <li>
+                    <strong>Tally ERP 9</strong>
+                    <span>2016</span>
+                </li>
+
+                <li>
+                    <strong>MS-CIT</strong>
+                    <span>2014</span>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS SECTION ================= -->
+
+<section id="projects" class="section">
+
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                <i class="fas fa-globe"></i>
+            </div>
+
+            <h3>My First Website</h3>
+
+            <p>
+                My first website project created using
+                HTML and CSS while learning web development.
+            </p>
+
+            <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+
+            <a href="https://github.com/himansh11296"
+            target="_blank" rel="noopener noreferrer"
+            class="project-link">
+                View on GitHub
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+                A responsive personal portfolio website
+                developed using HTML, CSS and JavaScript.
+            </p>
+
+            <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <a href="https://github.com/himansh11296/my-website"
+            target="_blank" rel="noopener noreferrer"
+            class="project-link">
+                View Source Code
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section id="contact" class="section">
+
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Let's Connect</h3>
+
+            <p>
+                I am open to new opportunities and professional
+                connections. Feel free to contact me.
+            </p>
+
+            <div class="contact-detail">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:himanshupujari1214@gmail.com">
+                    himanshupujari1214@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-detail">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+919527810314">
+                    +91 9527810314
+                </a>
+            </div>
+
+            <div class="contact-detail">
+                <i class="fas fa-location-dot"></i>
+                <span>Boisar, Maharashtra, India</span>
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://github.com/himansh11296"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <form id="contactForm" class="contact-form">
+
+            <h3>Send Me a Message</h3>
+
+            <input type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            maxlength="60"
+            required>
+
+            <input type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            maxlength="254"
+            required>
+
+            <textarea id="message"
+            name="message"
+            placeholder="Your Message"
+            rows="6"
+            maxlength="2000"
+            required></textarea>
+
+            <!-- Anti-spam honeypot field -->
+            <div class="form-trap" aria-hidden="true">
+                <label for="website">Leave this field empty</label>
+                <input type="text"
+                id="website"
+                name="website"
+                tabindex="-1"
+                autocomplete="off">
+            </div>
+
+            <button type="submit" class="btn">
+                Send Message
+                <i class="fas fa-paper-plane"></i>
+            </button>
+
+            <p id="formStatus" class="form-status"
+            aria-live="polite"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <p>
+        &copy; <span id="year"></span>
+        Himanshu Pujari. All Rights Reserved.
+    </p>
+
+    <p>Designed with <i class="fas fa-heart"></i> by Himanshu</p>
+
+</footer>
+
+
+<!-- ================= WHATSAPP BUTTON ================= -->
+
+<a href="https://wa.me/919527810314"
+class="whatsapp-float"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Chat on WhatsApp">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+<!-- ================= SCRIPTS ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script src="script.js"></script>
 
 </body>
