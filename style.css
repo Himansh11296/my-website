@@ -517,8 +517,15 @@ footer {
     min-height: calc(100svh - 75px);
     scroll-margin-top: 85px;
 }
-   
-    .profile-photo {
+
+   #skills,
+   #experience,
+   #projects,
+   #contact {
+    scroll-margin-top: 85px;
+}
+ 
+   .profile-photo {
         width: 145px;
         height: 145px;
     }
