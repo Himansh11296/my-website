@@ -226,11 +226,11 @@ header {
 /* About & Skills Spacing Fix */
 
 #about {
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 
 #skills {
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 .section-title {
