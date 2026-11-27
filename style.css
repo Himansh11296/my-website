@@ -512,7 +512,12 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
+   
+#about {
+    min-height: calc(100svh - 75px);
+    scroll-margin-top: 85px;
+}
+   
     .profile-photo {
         width: 145px;
         height: 145px;
