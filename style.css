@@ -506,9 +506,12 @@ footer {
     }
 
     .hero {
-    min-height: auto;
-    padding: 100px 20px 30px;
-    }
+    min-height: calc(100svh - 75px);
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
     .profile-photo {
         width: 145px;
