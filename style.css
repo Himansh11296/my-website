@@ -235,6 +235,11 @@ header {
     scroll-margin-top: 180px;
 }
 
+#experience {
+    padding-top: 100px;
+    scroll-margin-top: 85px;
+}
+
 #skills .section-title {
     margin-bottom: 80px;
 }
