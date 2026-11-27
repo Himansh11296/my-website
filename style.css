@@ -235,6 +235,10 @@ header {
     scroll-margin-top: 85px;
 }
 
+#skills .section-title {
+    margin-bottom: 55px;
+}
+
 .section-title {
     font-size: 35px;
     text-align: center;
