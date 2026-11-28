@@ -435,8 +435,8 @@ body {
 }
 
 .skill-icon {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
 
     display: flex;
     align-items: center;
@@ -1262,8 +1262,8 @@ body.light-mode .contact-form textarea {
     }
 
     .skill-card {
-        padding: 25px 20px;
-    }
+    padding: 12px 15px;
+}
 
     .experience-card h3 {
         font-size: 19px;
