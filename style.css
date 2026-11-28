@@ -521,7 +521,7 @@ body {
 .experience-card {
     position: relative;
     overflow: hidden;
-    padding: 15px;
+    padding: 12px;
 }
 
 .experience-card::before {
