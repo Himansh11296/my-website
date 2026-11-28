@@ -514,6 +514,10 @@ body {
     align-items: stretch;
 }
 
+#experience .section-title {
+    margin-bottom: 25px;
+}
+
 .experience-card {
     position: relative;
     overflow: hidden;
