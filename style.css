@@ -773,7 +773,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    align-items: stretch;
 }
+
 .contact-info,
 .contact-form {
     background: var(--card);
