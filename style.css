@@ -508,9 +508,10 @@ body {
 ========================= */
 
 .experience-container {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: stretch;
 }
 
 .experience-card {
