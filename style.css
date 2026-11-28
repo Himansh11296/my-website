@@ -781,7 +781,7 @@ body {
 .contact-form {
     background: var(--card);
     border: 1px solid var(--border);
-    padding: 22px 30px;
+    padding: 22px 30px 17px;
     border-radius: 20px;
     box-shadow: var(--shadow);
 }
