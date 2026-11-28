@@ -904,7 +904,7 @@ body {
 
 .contact-form textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 100px;
 }
 
 .contact-form .btn {
