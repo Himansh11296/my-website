@@ -917,6 +917,10 @@ body {
 
 /* Contact Section Heading Spacing */
 
+#contact {
+    padding-top: 0;
+}
+
 #contact .section-title {
     margin-bottom: 45px;
 }
