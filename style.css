@@ -917,6 +917,11 @@ body {
     overflow-wrap: anywhere;
 }
 
+/* Contact Section Heading Spacing */
+
+#contact .section-title {
+    margin-bottom: 10px;
+}
 
 /* =========================
    HONEYPOT
