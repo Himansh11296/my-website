@@ -947,28 +947,33 @@ body {
 }
 
 
+```css
 /* =========================
    FOOTER
 ========================= */
 
 .footer {
     text-align: center;
-
-    padding: 30px 20px;
-
+    padding: 25px 20px;
     background: var(--bg-secondary);
-
     border-top: 1px solid var(--border);
+    transition: var(--transition);
 }
 
 .footer p {
     color: var(--text-secondary);
     font-size: 12px;
-    margin: 5px 0;
+    margin: 6px 0;
+    line-height: 1.6;
 }
 
 .footer i {
     color: #f43f5e;
+    transition: transform 0.3s ease;
+}
+
+.footer i:hover {
+    transform: scale(1.2);
 }
 
 
