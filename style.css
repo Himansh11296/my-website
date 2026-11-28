@@ -442,7 +442,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    margin: 0 auto 18px;
+    margin: 0 auto 10px;
 
     border-radius: 18px;
 
@@ -499,7 +499,7 @@ body {
 }
 
 #skills {
-    padding-top: 35px;
+    padding-top: 10px;
 }
 
 /* =========================
@@ -1265,7 +1265,7 @@ body.light-mode .contact-form textarea {
     }
 
     .skill-card {
-    padding: 12px 15px;
+    padding: 8px 12px;
 }
 
     .experience-card h3 {
