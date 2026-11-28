@@ -972,6 +972,24 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* Footer Designer Name */
+
+.contact-copyright .designer-name {
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.contact-copyright p:first-child {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.contact-copyright p:last-child {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
 .footer i:hover {
     transform: scale(1.2);
 }
