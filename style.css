@@ -512,6 +512,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     align-items: stretch;
+    margin-top: -10px;
 }
 
 #experience .section-title {
