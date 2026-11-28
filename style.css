@@ -409,7 +409,7 @@ body {
 .skills-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 14px;
 }
 
 .skill-card {
@@ -499,7 +499,7 @@ body {
 }
 
 #skills {
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 /* =========================
@@ -1265,7 +1265,7 @@ body.light-mode .contact-form textarea {
     }
 
     .skill-card {
-    padding: 8px 12px;
+    padding: 6px 10px;
 }
 
     .experience-card h3 {
