@@ -765,6 +765,7 @@ body {
     gap: 12px;
 }
 
+
 /* =========================
    CONTACT SECTION
 ========================= */
@@ -780,10 +781,8 @@ body {
 .contact-form {
     background: var(--card);
     border: 1px solid var(--border);
-
     padding: 22px 30px;
     border-radius: 20px;
-
     box-shadow: var(--shadow);
 }
 
@@ -803,12 +802,9 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 13px;
-
     margin-bottom: 20px;
-
     color: var(--text-secondary);
     font-size: 13px;
-
     overflow-wrap: anywhere;
 }
 
@@ -827,8 +823,11 @@ body {
     color: var(--primary);
 }
 
+/* Social Media Links */
+
 .social-links {
     display: flex;
+    align-items: center;
     gap: 15px;
     margin-top: 25px;
 }
@@ -836,7 +835,6 @@ body {
 .social-links a {
     width: 45px;
     height: 45px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -848,7 +846,6 @@ body {
     border-radius: 12px;
 
     font-size: 20px;
-
     transition: var(--transition);
 }
 
@@ -856,6 +853,48 @@ body {
     background: var(--primary);
     color: #08111f;
     transform: translateY(-3px);
+}
+
+/* Copyright Inside Contact Info */
+
+.contact-info .contact-copyright {
+    margin-top: 22px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.contact-copyright p {
+    color: var(--text-secondary);
+    font-size: 12px;
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.contact-copyright p:first-child {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.contact-copyright .designer-name {
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.contact-copyright p:first-child i {
+    color: #f43f5e;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.contact-copyright p:first-child i:hover {
+    transform: scale(1.2);
+}
+
+.contact-copyright p:last-child {
+    font-size: 11px;
+    opacity: 0.8;
 }
 
 
@@ -872,7 +911,6 @@ body {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-
     padding: 14px 16px;
 
     background: var(--bg-secondary);
@@ -882,9 +920,7 @@ body {
     border-radius: 12px;
 
     outline: none;
-
     font-size: 13px;
-
     transition: var(--transition);
 }
 
@@ -897,9 +933,7 @@ body {
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: var(--primary);
-
-    box-shadow:
-        0 0 0 3px rgba(56, 189, 248, 0.08);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.08);
 }
 
 .contact-form textarea {
@@ -929,23 +963,19 @@ body {
     margin-bottom: 45px;
 }
 
+
 /* =========================
    HONEYPOT
 ========================= */
 
 .form-trap {
     position: absolute !important;
-
     width: 1px !important;
     height: 1px !important;
-
     overflow: hidden !important;
-
     clip: rect(0, 0, 0, 0) !important;
-
     white-space: nowrap !important;
 }
-
 
 
 /* =========================
@@ -954,71 +984,10 @@ body {
 
 .footer {
     text-align: center;
-    padding: 25px 20px;
+    padding: 15px 20px;
     background: var(--bg-secondary);
     border-top: 1px solid var(--border);
     transition: var(--transition);
-}
-
-/* Footer Copyright Box */
-
-.contact-copyright {
-    max-width: 600px;
-    width: 100%;
-    margin: 15px auto 0;
-    padding: 18px 20px;
-
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 15px;
-
-    box-shadow: var(--shadow);
-    text-align: center;
-}
-
-/* Footer Text */
-
-.footer p {
-    color: var(--text-secondary);
-    font-size: 12px;
-    margin: 6px 0;
-    line-height: 1.6;
-}
-
-/* Designed With Heart */
-
-.contact-copyright p:first-child {
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-
-/* Heart Icon */
-
-.contact-copyright p:first-child i {
-    color: #f43f5e;
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.contact-copyright p:first-child i:hover {
-    transform: scale(1.2);
-}
-
-/* Designer Name */
-
-.contact-copyright .designer-name {
-    color: var(--primary);
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-
-/* Copyright Text */
-
-.contact-copyright p:last-child {
-    font-size: 11px;
-    opacity: 0.8;
-    margin-top: 5px;
 }
 
 
