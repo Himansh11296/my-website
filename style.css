@@ -662,6 +662,9 @@ body {
     margin-top: 4px;
 }
 
+#education .section-title {
+    margin-bottom: 10px;
+}
 
 /* =========================
    PROJECTS SECTION
