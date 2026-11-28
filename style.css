@@ -498,6 +498,9 @@ body {
     background: rgba(34, 197, 94, 0.12);
 }
 
+#skills {
+    padding-top: 35px;
+}
 
 /* =========================
    EXPERIENCE SECTION
