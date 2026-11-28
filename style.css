@@ -823,7 +823,10 @@ body {
     color: var(--primary);
 }
 
-/* Social Media Links */
+
+/* =========================
+   SOCIAL MEDIA LINKS
+========================= */
 
 .social-links {
     display: flex;
@@ -835,13 +838,12 @@ body {
 .social-links a {
     width: 45px;
     height: 45px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     background: rgba(56, 189, 248, 0.1);
-    color: var(--primary);
-
     border: 1px solid var(--border);
     border-radius: 12px;
 
@@ -849,10 +851,24 @@ body {
     transition: var(--transition);
 }
 
+/* GitHub */
+.social-links a[aria-label="GitHub"] {
+    color: #ffffff;
+}
+
+/* LinkedIn */
+.social-links a[aria-label="LinkedIn"] {
+    color: #0A66C2;
+}
+
+/* Instagram */
+.social-links a[aria-label="Instagram"] {
+    color: #E4405F;
+}
+
 .social-links a:hover {
-    background: var(--primary);
-    color: #08111f;
     transform: translateY(-3px);
+    background: var(--bg-secondary);
 }
 
 /* Copyright Inside Contact Info */
