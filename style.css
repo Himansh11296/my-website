@@ -866,7 +866,7 @@ body {
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 12px;
 }
 
 .contact-form input,
